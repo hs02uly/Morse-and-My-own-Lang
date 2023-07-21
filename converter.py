@@ -12,7 +12,7 @@ def convert(string):
     for item in result:
         hiragana_array.append(item["hira"])
 
-    hiragana = str(" ".join(hiragana_array))
+    hiragana = str(" ".join(hiragana_array)).lower() #小文字に
 
     for i in hiragana:
         if i not in dic.morse:
